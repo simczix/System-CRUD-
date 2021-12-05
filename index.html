@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Księgarnia
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+	<h1><center>Zarządzanie zasobami księgarni</center></h1>
+	<hr>
+			<div class="employee-form">
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Tytuł</label><label class="validation-error hide" id="TytulValidationError">*To pole jest wymagane.</label>
+                        <input type="text" name="Tytuł" id="Tytul">
+                    </div>
+                    <div>
+                        <label>ISBN</label>
+                        <input type="text" name="ISBN" id="ISBN">
+                    </div>
+                    <div>
+                        <label>Autor</label>
+                        <input type="text" name="Autor" id="Autor">
+                    </div>
+                    <div>
+                        <label>Wydanie</label>
+                        <input type="text" name="Wydanie" id="Wydanie">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Dodaj">
+                    </div>
+                </form>
+		</div>
+		<br/>
+		<div class = "employees-table">
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>Tytuł</th>
+                            <th>ISBN</th>
+                            <th>Autor</th>
+                            <th>Wydanie</th>
+                            <th>Polecenia</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>
